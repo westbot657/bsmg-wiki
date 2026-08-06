@@ -616,12 +616,12 @@ The functionality of the two "parameter" fields will change depending on the typ
 
 | Value |     Result      |
 | :---: | :-------------: |
-|  `0`  |    Division     |
-|  `1`  | Step and Offset |
+|  `1`  |    Division     |
+|  `2`  | Step and Offset |
 
 #### Division {#index-filters-type-1}
 
-If "type" is `0`, all environment objects will be equally distributed into the defined number of sections,
+If "type" is `1`, all environment objects will be equally distributed into the defined number of sections,
 and only those objects within the indicated section will be processed.
 
 - `p` determines the number of sections to divide the objects within the group into.
@@ -629,7 +629,7 @@ and only those objects within the indicated section will be processed.
 
 #### Step and Offset {#index-filters-type-2}
 
-If "type" is `1`, the filter will iterate over all available environment objects in the group
+If "type" is `2`, the filter will iterate over all available environment objects in the group
 and skip over a defined number of elements at a time, as determined by its "step" value.
 
 - `p` determines the starting light that will be affected.
